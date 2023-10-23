@@ -1,0 +1,350 @@
+.desenvolvimentos-bg {
+  background-color: #1a1a1a;
+  position: relative;
+  padding: 100px;
+}
+.evolucao {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.desenvolvimentos-subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.desenvolvimentos-subtitulo::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: linear-gradient(180deg, #db0000 0%, #b40909 100%);
+}
+.desenvolvimentos-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.desenvolvimentos-titulo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 103.0192px;
+  height: 79.0608px;
+  background: url(/img/decoracao/Decorador.svg) no-repeat center;
+  top: -10px;
+  left: 235px;
+  z-index: -1;
+}
+.desenvolvimentos-separador-ponto {
+  color: var(--cor-l1);
+}
+.desenvolvimentos-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+    "bikcraft-informacoes desenvolvimentos-separador-de-colunas bikcraft-imagem"
+    "portfolio-imagem desenvolvimentos-separador-de-colunas portfolio-informacoes"
+    "elisa-informacoes desenvolvimentos-separador-de-colunas elisa-imagem"
+    "guilherme-imagem desenvolvimentos-separador-de-colunas guilherme-informacoes";
+  gap: 40px;
+  padding-top: 100px;
+}
+.bikcraft-informacoes {
+  grid-area: bikcraft-informacoes;
+}
+.desenvolvimentos-separador-de-colunas {
+  grid-area: desenvolvimentos-separador-de-colunas;
+}
+.bikcraft-imagem {
+  grid-area: bikcraft-imagem;
+}
+.portfolio-informacoes {
+  grid-area: portfolio-informacoes;
+}
+.portfolio-imagem {
+  grid-area: portfolio-imagem;
+}
+.elisa-informacoes {
+  grid-area: elisa-informacoes;
+}
+.elisa-imagem {
+  grid-area: elisa-imagem;
+}
+.guilherme-informacoes {
+  grid-area: guilherme-informacoes;
+}
+.guilherme-imagem {
+  grid-area: guilherme-imagem;
+}
+.desenvolvimentos-separador-de-colunas {
+  width: 5px;
+  height: auto;
+  border-radius: 10px;
+  background: linear-gradient(
+    153deg,
+    #1a1a1a 14.06%,
+    #db0000 49.48%,
+    #1a1a1a 78.13%
+  );
+}
+.desenvolvimentos-imagens-projetos {
+  border-radius: 10px;
+}
+.desenvolvimentos-links-dos-projetos {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.informacoes {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.desenvolvimentos-imagem {
+  margin: 0px;
+  position: relative;
+}
+.desenvolvimentos-imagens-projetos {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 2;
+}
+.desenvolvimentos-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 1;
+}
+.desenvolvimentos-imagem:hover .desenvolvimentos-imagens-projetos {
+  opacity: 0;
+}
+.desenvolvimentos-imagem:hover .desenvolvimentos-video {
+  opacity: 1;
+}
+.desenvolvimentos-texto {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.desenvolvimentos-projetos {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.desenvolvimentos-projetos::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/img/desenvolvimentos/Seta.png");
+  margin-left: 10px;
+}
+.desenvolvimentos-projetos::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #db0000 0%, #b40909 100%);
+}
+.desenvolvimentos-github {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.desenvolvimentos-github::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("/img/desenvolvimentos/GitHub.png");
+  margin-left: 10px;
+}
+.desenvolvimentos-github::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-l1);
+  margin-top: 30px;
+  transition: 0.3s;
+  position: absolute;
+}
+.desenvolvimentos-github:hover::before {
+  width: 100%;
+}
+/*RESPONSIVO PARA DESKTOP*/
+@media (max-width: 1600px) {
+  .evolucao {
+    margin-right: 15px;
+  }
+}
+/*RESPONSIVO PARA LAPTOP*/
+@media (max-width: 1350px) {
+  .desenvolvimentos-titulo::before {
+    top: -10px;
+    left: 17.5%;
+  }
+}
+@media (max-width: 1300px) {
+  .desenvolvimentos-titulo::before {
+    top: -5px;
+    left: 15.5%;
+  }
+}
+@media (max-width: 1250px) {
+  .desenvolvimentos-titulo::before {
+    top: -5px;
+    left: 14%;
+  }
+}
+@media (max-width: 1200px) {
+  .desenvolvimentos-titulo::before {
+    top: -5px;
+    left: 12%;
+  }
+}
+/*RESPONSIVO PARA TABLET*/
+@media (max-width: 1024px) {
+  .desenvolvimentos-bg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .desenvolvimentos-titulo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 103.0192px;
+    height: 79.0608px;
+    background: url(/img/decoracao/Decorador-1024.svg) no-repeat center;
+    top: -10px;
+    left: 13%;
+    z-index: -1;
+  }
+  .evolucao {
+    display: none;
+  }
+  .projeto-video {
+    display: none;
+  }
+}
+@media (max-width: 924px) {
+  .desenvolvimentos-titulo::before {
+    top: -10px;
+    left: 9%;
+  }
+}
+@media (max-width: 824px) {
+  .desenvolvimentos-titulo::before {
+    top: -10px;
+    left: 3%;
+  }
+}
+@media (max-width: 768px) {
+  .desenvolvimentos-titulo::before {
+    top: -10px;
+    left: 0%;
+  }
+}
+/*RESPONSIVO PARA CELULAR*/
+@media (max-width: 767px) {
+  .desenvolvimentos-subtitulo {
+    font: 400 24px/32px "Poppins", sans-serif;
+  }
+  .desenvolvimentos-subtitulo::before {
+    width: 30px;
+  }
+  .desenvolvimentos-titulo {
+    font: 600 50px/58px "Poppins", sans-serif;
+  }
+  .desenvolvimentos-titulo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 103.0192px;
+    height: 79.0608px;
+    background: url(/img/decoracao/Decorador-1024.svg) no-repeat center;
+    top: -10px;
+    left: 13%;
+    z-index: -1;
+  }
+  .desenvolvimentos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bikcraft-informacoes"
+      "bikcraft-imagem"
+      "portfolio-informacoes"
+      "portfolio-imagem"
+      "elisa-informacoes"
+      "elisa-imagem"
+      "guilherme-informacoes"
+      "guilherme-imagem";
+    gap: 40px;
+    padding-top: 100px;
+  }
+  .desenvolvimentos-links-dos-projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: normal;
+  }
+  .desenvolvimentos-links-dos-projetos a {
+    display: inline-block;
+  }
+  .informacoes {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .desenvolvimentos-imagem {
+    margin: 0px;
+    padding-bottom: 50px;
+  }
+  .desenvolvimentos-separador-de-colunas {
+    display: none;
+  }
+  .informacoes-titulo {
+    font: 500 32px/40px "Poppins", sans-serif;
+  }
+}
+@media (max-width: 520px) {
+  .desenvolvimentos-titulo {
+    font: 600 2.1875rem/2.6875rem "Poppins", sans-serif;
+  }
+}
+@media (max-width: 450px) {
+  .desenvolvimentos-titulo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 103.0192px;
+    height: 79.0608px;
+    background: url(/img/decoracao/Decorador-1024.svg) no-repeat center;
+    top: -16px;
+    left: 0%;
+    z-index: -1;
+  }
+}
+@media (max-width: 430px) {
+  .desenvolvimentos-titulo::before {
+    top: -16px;
+    left: -5%;
+  }
+}

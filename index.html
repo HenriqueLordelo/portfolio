@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml" sizes="any">
+  <title>Henrique Lordêlo - Portfólio | Desenvolvedor Web</title>
+  <meta name="description" content="Convido você a explorar meu portfólio para conhecer mais sobre meu trabalho e meu estilo de desenvolvimento.">
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <a class="header-logo" href="/">LOGO</a>
+      <nav id="nav" aria-label="primaria">
+        <button id="btn-mobile" aria-haspopup="true" aria-expanded="false" aria-controls="header-menu"><span id="hamburguer"></span></button>
+        <ul class="header-menu cor-c0 font-p9" role="menu">
+          <li><a href="#quemsou">Quem Sou</a></li>
+          <li><a href="#desenvolvimentos">Desenvolvimentos</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="botao-introducao" href="#desenvolvimentos">Conhecer Projetos</a>
+    </div>
+  </header>
+
+  <main class="introducao-bg">
+    <span class="criatividade">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/criatividade-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/criatividade-1600.webp">
+        <img src="/img/palavras/criatividade.webp" alt="Criatividade" width="53" height="664">
+      </picture>
+    </span>
+    <span class="inovacao">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/inovacao-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/inovacao-1600.webp">
+        <img src="/img/palavras/inovacao.webp" alt="Inovação" width="85" height="498">
+      </picture>
+    </span>
+    <div class="introducao container">
+      <div class="introducao-conteudo">
+        <h2 class="henriquelordelo font-p5 cor-c3 easeInTeste" data-anime="300">Henrique Lordêlo</h2>
+        <h1 class="desenvolvedorfrontend font-p2 cor-c0 fadeInLeft" data-anime="200">Desenvolvedor Front-end <span class="pequenapausa">&</span> UX/UI Designer</h1>
+        <p class="pequenaintroducao font-r1 cor-c5 fadeInLeft" data-anime="400">Se você procura um profissional comprometido, criativo e que ama o que faz, estou pronto para embarcar nessa jornada com você!</p>
+        <a class="botao-secundario fadeInLeft" data-anime="600" href="https://wa.me/5511974753161?text=Ol%C3%A1%21+Estava+olhando+o+seu+portf%C3%B3lio+e+queria+saber+mais+informa%C3%A7%C3%B5es." target="_blank">Entre em Contato</a>
+      </div>
+      <div class="introducao-imagens-e-redes-sociais">
+        <picture>
+          <img class="introducao-imagem-celular easeInTransform" src="/img/introducao/mobile.gif" alt="Site na versão mobile">
+          <!-- <img class="introducao-imagem-celular easeInTransform" src="/img/introducao/Celular.webp" alt="Site na versão mobile" width="329" height="660"> -->
+        </picture>
+        <ul class="introducao-redes-sociais easeInTeste" data-anime="400">
+          <li> <a href="https://www.linkedin.com/" target="_blank"> <img src="/img/redes sociais/LinkedIn.png" alt="LinkedIn" width="30" height="30"></li></a>
+          <li><a href="https://github.com/HenriqueLordelo" target="_blank"> <img src="/img/redes sociais/GitHub.png" alt="GitHub" width="30" height="30"></li></a>
+          <li> <a href="https://www.instagram.com/rickzsz/" target="_blank"> <img src="/img/redes sociais/Instagram.png" alt="Instagram" width="30" height="30"></li></a>
+          <li> <a href="https://wa.me/5511974753161?text=Ol%C3%A1%21+Estava+olhando+o+seu+portf%C3%B3lio+e+queria+saber+mais+informa%C3%A7%C3%B5es." target="_blank"> <img src="/img/redes sociais/WhatsApp.png" alt="WhatsApp" width="30" height="30"></li></a>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <article class="sobremim-bg" id="quemsou" aria-label="Sobre Mim">
+    <span class="versatilidade">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/versatilidade-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/versatilidade-1600.webp">
+        <img src="/img/palavras/versatilidade.webp" alt="Versatilidade" width="53" height="772">
+      </picture>
+    </span>
+    <div class="sobremim container">
+      <div class="quem-sou-eu">
+        <h3 class="sobremim-subtitulo cor-c3 font-p5 easeInTeste" data-anime="300">Sobre mim</h3>
+        <h2 class="quemsoueu-titulo font-p2 cor-c0 fadeInLeft" data-anime="200">Quem sou eu<span class="pontodeinterrogacao">?</span></h2>
+        <p class="quemsoueu-primeiro-paragrafo cor-c3 font-r2">Apaixonado por tecnologia e conhecimento, criando experiências únicas.</p>
+        <p class="quemsoueu-segundo-paragrafo cor-c3 font-r1">Desde a minha infância, fui movido pela curiosidade e fascínio em descobrir como criar um site, pois o jogo que eu jogava me fez ter esta curiosidade. Ao longo do tempo, transformei essa paixão em uma carreira como desenvolvedor web.</p>
+        <p class="quemsoueu-terceiro-paragrafo cor-c3 font-r1">Cursei Análise e Desenvolvimento de Sistemas, o que me proporcionou uma base sólida da área em que eu queria atuar. Logo após minha formação, entrei no mercado de trabalho como Desenvolvedor web, onde tenho a oportunidade de aplicar meus conhecimentos e aprender novas habilidades diariamente.</p>
+        <div class="experiencia">
+          <div class="tecnologo">
+            <span class="cor-c4 font-r3">Tecnólogo</span>
+            <h2 class="tecnologo-curso font-p7 cor-c0">Análise e Desenvolvimento de Sistemas</h2>
+            <h3 class="tecnologo-lugar cor-c2 font-p9">UBC 2021 - 2022</h3>
+          </div>
+          <div class="desenvolvedorweb">
+            <span class="cor-c4 font-r3">Desenvolvedor Web</span>
+            <h2 class="desenvolvedorweb-lugar font-p7 cor-c0">Phoenix</h2>
+            <h3 class="desenvolvedorweb-data cor-c2 font-p9">2022 - 2023</h3>
+          </div>
+        </div>
+      </div>
+      <div class="minha-foto-e-competencias">
+        <picture class="minha-foto">
+          <img class="minha-foto-e-competencias-foto" src="/img/sobre mim/Minha foto.webp" alt="Foto de Henrique Lordêlo" width="460" height="620">
+          <div class="circulo circulo-1">CRIATIVO</div>
+          <div class="circulo circulo-2">CURIOSO</div>
+          <div class="circulo circulo-3">PERSISTENTE</div>
+          <div class="circulo circulo-4">VERSÁTIL</div>
+        </picture>
+        <div class="competencias">
+          <ul class="competencias-icones1">
+            <li><img src="/img/competencias/HTML.png" alt="HTML" width="40" height="40"><span class="tooltip">HTML</span></li>
+            <li><img src="/img/competencias/CSS.png" alt="CSS" width="40" height="40"><span class="tooltip">CSS</span></li>
+            <li><img src="/img/competencias/JavaScript.png" alt="JavaScript" width="40" height="40"><span class="tooltip">JavaScript</span></li>
+            <li><img src="/img/competencias/WordPress.png" alt="WordPress" width="40" height="40"><span class="tooltip">WordPress</span></li>
+          </ul>
+          <ul class="competencias-icones2">
+            <li><img src="/img/competencias/MySQL.png" alt="MySQL" width="40" height="40"><span class="tooltip">MySQL</span></li>
+            <li><img src="/img/competencias/GitHub.png" alt="GitHub" width="40" height="40"><span class="tooltip">GitHub</span></li>
+            <li><img src="/img/competencias/UX.png" alt="UX Design" width="40" height="40"><span class="tooltip">UX</span></li>
+            <li><img src="/img/competencias/UI.png" alt="UI Design" width="40" height="40"><span class="tooltip">UI</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="desenvolvimentos-bg" id="desenvolvimentos" aria-label="Projetos & Desenvolvimentos">
+    <span class="evolucao">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/evolucao-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/evolucao-1600.webp">
+        <img src="/img/palavras/evolucao.webp" alt="Evolução" width="85" height="492">
+      </picture>
+    </span>
+    <div class="desenvolvimentos container">
+      <div class="desenvolvimentos-subtitulo-titulo">
+        <h3 class="desenvolvimentos-subtitulo cor-c3 font-p5 easeInTeste" data-anime="300">Projetos em destaque</h3>
+        <h2 class="desenvolvimentos-titulo font-p2 cor-c0 fadeInLeft" data-anime="200">Desenvolvimentos<span class="desenvolvimentos-separador-ponto">.</span></h2>
+      </div>
+      <div class="desenvolvimentos-grid">
+        <div class="informacoes bikcraft-informacoes">
+          <h4 class="informacoes-titulo font-p4 cor-c0 easeInTeste" data-anime="300">BIKCRAFT</h4>
+          <p class="desenvolvimentos-texto cor-c3 font-r1">Um projeto para bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft! Feito em HTML, CSS e JavaScript.
+          </p>
+          <ul class="desenvolvimentos-links-dos-projetos">
+            <li><a class="desenvolvimentos-projetos font-p8 cor-c2" href="https://henriquelordelo.com/bikcraft" target="_blank">Visualizar Projeto</a></li>
+            <li><a class="desenvolvimentos-github font-p8 cor-c2" href="https://github.com/HenriqueLordelo" target="_blank">Ver no GitHub</a></li>
+          </ul>
+        </div>
+        <div class="desenvolvimentos-imagem bikcraft-imagem">
+          <img class="desenvolvimentos-imagens-projetos" src="/img/desenvolvimentos/Bikcraft.webp" alt="1 - Bikcraft" width="2000" height="1200">
+          <video class="desenvolvimentos-video" autoplay loop muted>
+            <source src="/img/desenvolvimentos/Bikcraft-Video-Teste.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="informacoes portfolio-informacoes">
+          <h4 class="informacoes-titulo font-p4 cor-c0 easeInTeste" data-anime="300">PORTFÓLIO INICIAL</h4>
+          <p class="desenvolvimentos-texto cor-c3 font-r1">Portfólio Inicial desenvolvido quando eu estava aprendendo HTML e CSS. Apenas uma validação da minha linha de aprendizagem. Este projeto foi um pontapé inicial para eu desenvolver este portfólio atual.</p>
+          <ul class="desenvolvimentos-links-dos-projetos">
+            <li><a class="desenvolvimentos-projetos font-p8 cor-c2" href="/portfolio-inicial/" target="_blank">Visualizar Projeto</a></li>
+            <li><a class="desenvolvimentos-github font-p8 cor-c2" href="https://github.com/HenriqueLordelo" target="_blank">Ver no GitHub</a></li>
+          </ul>
+        </div>
+        <div class="desenvolvimentos-imagem portfolio-imagem">
+          <img class="desenvolvimentos-imagens-projetos" src="/img/desenvolvimentos/Portfolio-Inicial.webp" alt="Projeto 2 - Portfólio Inicial" width="2000" height="1200">
+          <video class="desenvolvimentos-video" autoplay loop muted>
+            <source src="/img/desenvolvimentos/Video-Portfolio-Inicial.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="informacoes elisa-informacoes">
+          <h4 class="informacoes-titulo font-p4 cor-c0 easeInTeste" data-anime="300">DRA. ELISA MACEDO</h4>
+          <p class="desenvolvimentos-texto cor-c3 font-r1">Dra. Elisa Macedo - Especialista em Prótese Dentária. Possui uma clínica odontológica que realiza alguns serviços, tais como: DTM, aparelho ortodôntico e invisalign. Projeto feito com WordPress.</p>
+          <ul class="desenvolvimentos-links-dos-projetos">
+            <li><a class="desenvolvimentos-projetos font-p8 cor-c2" href="https://elisamacedoodontologia.com.br/" target="_blank">Visualizar Projeto</a></li>
+            <li><a class="desenvolvimentos-github font-p8 cor-c2" href="https://github.com/HenriqueLordelo" target="_blank">Ver no GitHub</a></li>
+          </ul>
+        </div>
+        <div class="desenvolvimentos-imagem elisa-imagem">
+          <img class="desenvolvimentos-imagens-projetos" src="/img/desenvolvimentos/Dra.-Elisa-Macedopng.webp" alt="3 - Dra. Elisa Macedo" width="2000" height="1200">
+          <video class="desenvolvimentos-video" autoplay loop muted>
+            <source src="/img/desenvolvimentos/Video Dra. Elisa Macedo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="informacoes guilherme-informacoes">
+          <h4 class="informacoes-titulo font-p4 cor-c0 easeInTeste" data-anime="300">DR. GUILHERME VANZO</h4>
+          <p class="desenvolvimentos-texto cor-c3 font-r1">Dr. Guilherme Vanzo - Cirurgião Bucomaxilofacial. Novamente, um projeto para um especialista em odontologia. Desenvolvido em WordPress.</p>
+          <ul class="desenvolvimentos-links-dos-projetos">
+            <li><a class="desenvolvimentos-projetos font-p8 cor-c2" href="https://drguilhermevanzo.com.br/" target="_blank">Visualizar Projeto</a></li>
+            <li><a class="desenvolvimentos-github font-p8 cor-c2" href="https://github.com/HenriqueLordelo" target="_blank">Ver no GitHub</a></li>
+          </ul>
+        </div>
+        <div class="desenvolvimentos-imagem guilherme-imagem">
+          <img class="desenvolvimentos-imagens-projetos" src="/img/desenvolvimentos/Dr.-Guilherme-Vanzo.webp" alt="Projeto 4 - Dr. Guilherme Vanzo" width="2000" height="1200">
+          <video class="desenvolvimentos-video" autoplay loop muted>
+            <source src="/img/desenvolvimentos/Video-Dr.-Guilherme-Vanzo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="desenvolvimentos-separador-de-colunas"></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="portfolio-tipografias-bg" id="portfolio" aria-label="Portfólio | Tipografias Utilizadas">
+    <span class="singularidade">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/singularidade-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/singularidade-1600.webp">
+        <img src="/img/palavras/singularidade.webp" alt="Singularidade" width="53" height="745">
+      </picture>
+    </span>
+    <div class="portfolio-tipografias container">
+      <div class="portfolio-tipografias-subtitulo-titulo">
+        <h3 class="portfolio-tipografias-subtitulo cor-c3 font-p5 easeInTeste" data-anime="300">Curiosidades do meu portfólio</h3>
+        <h2 class="portfolio-tipografias-titulo font-p2 cor-c0 fadeInLeft" data-anime="200">Portfólio<span class="desenvolvimentos-separador-ponto">.</span></h2>
+      </div>
+      <div class="portfolio-tipografias-grid">
+        <div>
+          <h2 class="portfolio-tipografias-tipografias-utilizadas cor-c3 easeInTeste" data-anime="300">Tipografias Utilizadas</h2>
+          <span class="portfolio-tipografias-a-maiusculo">A<span class="portfolio-tipografias-a-minusculo">a</span></span>
+        </div>
+        <div>
+          <h2 class="portfolio-tipografias-poppins font-p4 cor-c3 easeInTeste" data-anime="300">Poppins</h2>
+          <ul>
+            <li>
+              <h3 class="portfolio-tipografias-primeiro-item-poppins font-p5 cor-c3">Aa Bb Cc Dd Ee Ff Gg Hh 1 2 3 4 7</h3>
+            </li>
+            <li>
+              <h3 class="portfolio-tipografias-segundo-item-poppins cor-c3">Aa Bb Cc Dd Ee Ff Gg Hh 1 2 3 4 7</h3>
+            </li>
+            <li>
+              <h3 class="portfolio-tipografias-terceiro-item-poppins cor-c3">Aa Bb Cc Dd Ee Ff Gg Hh 1 2 3 4 7</h3>
+            </li>
+            <li>
+              <p class="font-p9 cor-c5">Sua aparência amigável e contemporânea faz com que seja amplamente utilizada em diversos tipos de trabalhos, desde sites modernos até materiais promocionais e editoriais.</p>
+            </li>
+          </ul>
+          <h2 class="portfolio-tipografias-roboto font-p4 cor-c3 easeInTeste" data-anime="300">Roboto</h2>
+          <ul>
+            <li>
+              <h3 class="portfolio-tipografias-primeiro-item-roboto font-r9 cor-c3">Aa Bb Cc Dd Ee Ff Gg Hh 1 2 3 4 7</h3>
+            </li>
+            <li>
+              <h3 class="portfolio-tipografias-segundo-item-roboto cor-c3">Aa Bb Cc Dd Ee Ff Gg Hh 1 2 3 4 7</h3>
+            </li>
+            <li>
+              <h3 class="portfolio-tipografias-terceiro-item-roboto cor-c3">Aa Bb Cc Dd Ee Ff Gg Hh 1 2 3 4 7</h3>
+            </li>
+            <li>
+              <p class="portfolio-tipografias-texto-roboto cor-c5">Sua legibilidade e clareza a tornam uma escolha popular para aplicativos, websites e materiais impressos, sendo frequentemente utilizada em projetos que buscam um design limpo.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="portfolio-tipografias-separador"></span>
+    </div>
+  </article>
+
+  <article class="portfolio-paleta-espacos-bg" aria-label="Portfólio | Paleta de Cores e Espaçamentos">
+    <span class="estilo">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/estilo-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/estilo-1600.webp">
+        <img src="/img/palavras/estilo.webp" alt="Estilo" width="53" height="304">
+      </picture>
+    </span>
+    <div class="portfolio-paleta-espacos container">
+      <div class="paleta-de-cores">
+        <div>
+          <h2 class="paleta-de-cores-titulo font-p3 cor-c3 easeInTeste" data-anime="300">Paleta de Cores</h2>
+        </div>
+        <div class="paleta-de-cores-divisor-hexadecimal">
+          <ul class="paleta-de-cores-hexadecimal">
+            <li class="flex-item b40000 font-p6 cor-c3"><span>#B40000</span></li>
+            <li class="flex-item preto000000 font-p6 cor-c3"><span>#000000</span></li>
+            <li class="flex-item linear-v2 font-p6 cor-c3"><span>LINEAR V2</span></li>
+            <li class="flex-item preto121212 font-p6 cor-c3"><span>#121212</span></li>
+            <li class="flex-item linear-v3 font-p6 cor-c3"><span>LINEAR V3</span></li>
+            <li class="flex-item preto141414 font-p6 cor-c3"><span>#141414</span></li>
+            <li class="flex-item f58000 font-p6 cor-c3"><span>#F58000</span></li>
+            <li class="flex-item preto2e2e2e font-p6 cor-c3"><span>#2E2E2E</span></li>
+            <li class="flex-item f56b00 font-p6 cor-c3"><span>#F56B00</span></li>
+            <li class="flex-item cinza404040 font-p6 cor-c3"><span>#404040</span></li>
+            <li class="flex-item verde0f8208 font-p6 cor-c3"><span>#0F8208</span></li>
+            <li class="flex-item cinza595959 font-p6 cor-c3"><span>#595959</span></li>
+            <li class="flex-item cinza707070 font-p6 cor-c3"><span>#707070</span></li>
+            <li class="flex-item cinza9c9c9c font-p6 cor-c3"><span>#9C9C9C</span></li>
+            <li class="flex-item cinzab3b3b3 font-p6 cor-c10"><span>#B3B3B3</span></li>
+            <li class="flex-item cinzacccccc font-p6 cor-c10"><span>#CCCCCC</span></li>
+            <li class="flex-item cinzadedede font-p6 cor-c10"><span>#DEDEDE</span></li>
+            <li class="flex-item cinzaededed font-p6 cor-c10"><span>#EDEDED</span></li>
+            <li class="flex-item cinzaf7f7f7 font-p6 cor-c10"><span>#F7F7F7</span></li>
+            <li class="flex-item cinzaffffff font-p6 cor-c10"><span>#FFFFFF</span></li>
+          </ul>
+        </div>
+        <span class="paleta-de-cores-divisor-de-secoes"></span>
+      </div>
+      <div class="espacos-multiplos-de-4">
+        <h2 class="espacos-multiplos-de-4-titulo font-p3 cor-c3 easeInTeste" data-anime="300">Espaços - Múltiplos de 4</h2>
+        <ul class="barra-dos-espacamentos">
+          <li><span class="barra-004"></span></li>
+          <li><span class="barra-008"></span></li>
+          <li><span class="barra-012"></span></li>
+          <li><span class="barra-016"></span></li>
+          <li><span class="barra-020"></span></li>
+          <li><span class="barra-024"></span></li>
+          <li><span class="barra-032"></span></li>
+          <li><span class="barra-036"></span></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <span class="portfolio-paleta-espacos-separador"></span>
+
+  <article class="portfolio-antes-e-depois-bg">
+    <span class="transformacao">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/transformacao-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/transformacao-1600.webp">
+        <img src="/img/palavras/transformacao.webp" alt="Transformação" width="85" height="837">
+      </picture>
+    </span>
+    <div class="portfolio-antes-e-depois container">
+      <div class="portfolio-antes-e-depois-grid">
+        <div class="portfolio-antes-e-depois-imagem">
+          <picture>
+            <img class="imagem-antes-e-depois" src="/img/portfolio/antes-e-depois2-0.webp" alt="Portfólio nas 3 versões: wireframe, protótipo final e codificação" width="1079" height="410">
+          </picture>
+        </div>
+        <div class="portfolio-antes-e-depois-informacoes">
+          <h2 class="portfolio-antes-e-depois-titulo cor-c3 easeInTeste" data-anime="300">Evolução Criativa</h2>
+          <p class="portfolio-antes-e-depois-paragrafo cor-c5 font-r1">Mostro algumas etapas do projeto e o que priorizei mediante ao meu portfólio. Projeto desenvolvido com Figma, HTML, CSS e JavaScript. Portfólio em constante evolução!</p>
+          <ul class="portfolio-antes-e-depois-qualidades">
+            <li>
+              <div class="portfolio-antes-e-depois-imagem-container">
+                <img src="/img/evolucao criativa/Interface-do-Usuario.png" alt="Interface do Usuário" width="40" height="40">
+              </div>
+              <div class="portfolio-antes-e-depois-conteudo">
+                <h3 class="portfolio-antes-e-depois-titulo-qualidades cor-c3">Interface do Usuário</h3>
+                <p class="font-r1 cor-c5">Em cada projeto, um desafio. Em cada desafio, uma solução brilhante.</p>
+              </div>
+            <li class="portfolio-antes-e-depois-espacamento">
+              <div class="portfolio-antes-e-depois-imagem-container">
+                <img src="/img/evolucao criativa/Versatilidade-na-Web.png" alt="Versatilidade na Web" width="40" height="40">
+              </div>
+              <div class="portfolio-antes-e-depois-conteudo">
+                <h3 class="portfolio-antes-e-depois-titulo-qualidades cor-c3">Versatilidade Web</h3>
+                <p class="font-r1 cor-c5">Desde a criação de sites simples e elegantes à sistemas mais complexos.</p>
+              </div>
+            </li>
+            <li class="portfolio-antes-e-depois-espacamento">
+              <div class="portfolio-antes-e-depois-imagem-container">
+                <img src="/img/evolucao criativa/Solucoes-Inovadoras.png" alt="Soluções Inovadoras" width="40" height="40">
+              </div>
+              <div class="portfolio-antes-e-depois-conteudo">
+                <h3 class="portfolio-antes-e-depois-titulo-qualidades cor-c3">Soluções Inovadoras</h3>
+                <p class="font-r1 cor-c5">Transformar ideias em projetos funcionais e intuitivos.</p>
+              </div>
+            </li>
+            <li class="portfolio-antes-e-depois-espacamento">
+              <div class="portfolio-antes-e-depois-imagem-container">
+                <img src="/img/evolucao criativa/Experiencia-do-Usuario.png" alt="Experiência do Usuário" width="40" height="40">
+              </div>
+              <div class="portfolio-antes-e-depois-conteudo">
+                <h3 class="portfolio-antes-e-depois-titulo-qualidades cor-c3">Experiência do Usuário</h3>
+                <p class="font-r1 cor-c5">Atenção aos detalhes e experiência amigável.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="contato-bg" id="contato" aria-label="Contato">
+    <span class="acessivel">
+      <picture>
+        <source media="(max-width: 1400px)" srcset="/img/palavras/acessivel-1400.webp">
+        <source media="(max-width: 1600px)" srcset="/img/palavras/acessivel-1600.webp">
+        <img src="/img/palavras/acessivel.webp" alt="Acessível" width="72" height="496">
+      </picture>
+    </span>
+    <div class="contato container">
+      <div>
+        <h3 class="contato-subtitulo cor-c12 font-p5 easeInTeste" data-anime="300">Vamos conectar ideias e oportunidades</h3>
+        <h2 class="contato-titulo font-p2 cor-c13 fadeInLeft" data-anime="300">Contato<span class="desenvolvimentos-separador-ponto">.</span></h2>
+      </div>
+      <div class="contato-secao">
+        <h2 class="contato-secao-titulo cor-c1 easeInTeste" data-anime="300">Gostou dos meus projetos?</h2>
+        <p class="contato-secao-descricao font-r1 cor-c2">Entre em contato comigo pelas redes sociais ou deixe uma mensagem.</p>
+        <div>
+          <form class="contato-form">
+            <textarea name="mensagem" id="mensagem" cols="37" rows="1" placeholder="Deixe sua mensagem..."></textarea>
+            <button type="submit" class="botao botao-formulario">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a class="header-logo rodape-logo" href="/">LOGO</a>
+      <nav class="rodape-nav" aria-label="rodapé">
+        <ul class="rodape-menu cor-c0 font-p9">
+          <li><a href="#quemsou">Quem Sou</a></li>
+          <li><a href="#desenvolvimentos">Desenvolvimentos</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <ul class="footer-redes-sociais">
+        <li> <a href="https://www.linkedin.com/" target="_blank"><img src="/img/rodape/LinkedIn.png" alt="LinkedIn" width="20" height="20"></li></a>
+        <li><a href="https://github.com/HenriqueLordelo" target="_blank"> <img src="/img/rodape/GitHub.png" alt="GitHub" width="20" height="20"></li></a>
+        <li> <a href="https://www.instagram.com/rickzsz/" target="_blank"> <img src="/img/rodape/Instagram.png" alt="Instagram" width="20" height="20"></li></a>
+        <li> <a href="https://wa.me/5511974753161?text=Ol%C3%A1%21+Estava+olhando+o+seu+portf%C3%B3lio+e+queria+saber+mais+informa%C3%A7%C3%B5es." target="_blank"> <img src="/img/rodape/WhatsApp.png" alt="WhatsApp" width="20" height="20"></li></a>
+      </ul>
+    </div>
+    <div class="footer-segunda-parte container">
+      <p class="font-r8 cor-c5">Henrique Lordêlo 2023. Todos os direitos reservados.</p>
+      <p class="font-r8 cor-c5">Desenvolvido por <a class="footer-henrique-lordelo" href="/">Henrique Lordêlo</a>.</p>
+    </div>
+  </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+.contato-bg {
+  background: url("/img/contato/Background\ \(1\).webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px;
+}
+.acessivel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.contato-subtitulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.contato-subtitulo::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: linear-gradient(180deg, #db0000 0%, #b40909 100%);
+}
+.contato-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+.contato-titulo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 103.0192px;
+  height: 79.0608px;
+  background: url(/img/decoracao/Decorador.svg) no-repeat center;
+  top: -10px;
+  left: 25%;
+  z-index: -1;
+}
+.contato {
+  display: grid;
+  justify-content: center;
+}
+.contato-secao {
+  max-width: 840px;
+  height: auto;
+  background: url("/img/contato/Background\ do\ Contato.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.contato-secao-titulo {
+  display: flex;
+  justify-content: center;
+  font: 600 44px/52px "Poppins", sans-serif;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.contato-secao-descricao {
+  align-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.contato-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+form textarea {
+  max-width: 370px;
+  max-height: 56px;
+  background-color: var(--cor-c2);
+  color: var(--cor-c12);
+  font-size: 18px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 16px;
+  line-height: auto;
+}
+form textarea::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+form textarea::-webkit-scrollbar-thumb{
+  background: var(--cor-v1);
+}
+form textarea::-webkit-scrollbar-track{
+  background: transparent;
+}
+form textarea::placeholder {
+  font: 400 18px/24px "Roboto", sans-serif;
+  color: #949494;
+}
+form textarea:focus {
+  outline: none;
+  font: 400 18px/24px "Roboto", sans-serif;
+  color: var(--cor-c12);
+  box-shadow: 0 0 0 1px var(--cor-v1);
+}
+/*RESPONSIVO PARA DESKTOP*/
+@media (max-width: 1600px) {
+  .acessivel {
+    margin-right: 15px;
+  }
+}
+/*RESPONSIVO PARA LAPTOP*/
+@media (max-width: 1300px) {
+  .contato-titulo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 92.71728px;
+    height: 71.15472px;
+    background: url(/img/decoracao/Decorador-1300.svg) no-repeat center;
+    top: -2px;
+    left: 26%;
+    z-index: -1;
+  }
+}
+@media (max-width: 1024px) {
+  .acessivel {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .contato-secao-titulo {
+    font: 600 36px/44px "Poppins", sans-serif;
+  }
+}
+@media (max-width: 800px) {
+  .contato-titulo::before {
+    top: -2px;
+    left: 20%;
+  }
+}
+/*RESPONSIVO PARA CELULAR*/
+@media (max-width: 767px) {
+  .botao {
+    display: inline-block;
+  }
+  .contato-bg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .acessivel {
+    display: none;
+  }
+  .contato-subtitulo {
+    padding-left: 10px;
+    padding-right: 10px;
+    font: 400 24px/32px "Poppins", sans-serif;
+  }
+  .contato-subtitulo::before {
+    width: 30px;
+  }
+  .contato-titulo {
+    font: 600 50px/58px "Poppins", sans-serif;
+    padding-bottom: 50px;
+  }
+  .contato-titulo::before {
+    background: url(/img/decoracao/Decorador-1024.svg) no-repeat center;
+    top: -10px;
+    left: 25%;
+  }
+  .contato-secao-titulo {
+    text-align: center;
+    font: 600 30px/38px "Poppins", sans-serif;
+  }
+  .contato-secao-descricao {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contato-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    flex-direction: column;
+  }
+  form textarea {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .botao-formulario {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .contato-titulo::before {
+    background: url(/img/decoracao/Decorador-1024.svg) no-repeat center;
+    top: -5px;
+    left: 13%;
+  }
+}

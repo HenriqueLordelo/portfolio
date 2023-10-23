@@ -1,0 +1,147 @@
+.header-bg {
+  background-color: var(--cor-c13);
+  border-bottom: 1px solid var(--cor-c10);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.header-menu a {
+  display: inline-block;
+  padding: 38px 0px;
+  position: relative;
+}
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--cor-v1);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
+  width: 100%;
+}
+.header-logo {
+  font: 600 32px/40px "Poppins", sans-serif;
+  background: linear-gradient(180deg, #db0000 0%, #b40909 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*FAZENDO O MENU MOBILE*/
+#btn-mobile {
+  display: none;
+}
+/*RESPONSIVO PARA LAPTOP*/
+@media (max-width: 1171px) {
+  .header {
+    gap: 10px;
+    padding-bottom: 38px;
+  }
+  .header-menu a {
+    padding: 16px 0px;
+  }
+}
+/*RESPONSIVO PARA TABLET*/
+@media (max-width: 1024px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .header-bg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .header-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 73px;
+    right: 0px;
+    height: 0px;
+    transition: 0.6s;
+    justify-content: start;
+    background: var(--cor-c11);
+    z-index: 3;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .botao-introducao {
+    display: none;
+  }
+  #nav.active .header-menu {
+    height: calc(100vh - 73px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .header-menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    font-size: 16px;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburguer {
+    display: block;
+    border-top: 2px solid white;
+    width: 25px;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+/*RESPONSIVO PARA CELULAR*/
+@media (max-width: 767px) {
+  .botao-introducao {
+    display: none;
+  }
+  .header-menu {
+    gap: 10px;
+    justify-content: start;
+  }
+  .header-menu a {
+    padding: 12px 6px;
+    font-size: 16px;
+  }
+}

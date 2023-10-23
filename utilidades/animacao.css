@@ -1,0 +1,38 @@
+/*6 CSS personalizado dependendo da animação desejada. Devem ser adicionadas na frente do código essencial do item 7.*/
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+.easeInTeste {
+  transform: translate3d(0, 0, 0);
+}
+/* 7 Adicione o CSS Essencial abaixo */
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+@keyframes easeInTransform {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.easeInTransform {
+  animation: easeInTransform 1.2s ease-in;
+}
